@@ -1,1 +1,1 @@
-# EmptyMind_BLP_2023
+#Classification of Bangla Violence Inciting Text Project
