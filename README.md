@@ -103,9 +103,7 @@ Combined from:
 
 ## 📷 Example Output
 
-Confusion matrix for confidence routing:
-
-![Confusion Matrix](Figures/results/cm_confidence_routing.pdf)
+Confusion matrix for confidence routing are uploaded 
 
 ---
 
