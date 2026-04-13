@@ -1,0 +1,131 @@
+============================================================
+INDIVIDUAL MODELS
+============================================================
+
+--- BanglaBERT ---
+                  precision    recall  f1-score   support
+
+    Non_Violence       0.88      0.93      0.90       986
+Passive_Violence       0.76      0.70      0.73       986
+        Violence       0.79      0.82      0.80       986
+
+        accuracy                           0.81      2958
+       macro avg       0.81      0.81      0.81      2958
+    weighted avg       0.81      0.81      0.81      2958
+
+
+--- XLM-RoBERTa ---
+                  precision    recall  f1-score   support
+
+    Non_Violence       0.81      0.87      0.84       986
+Passive_Violence       0.68      0.62      0.65       986
+        Violence       0.77      0.77      0.77       986
+
+        accuracy                           0.76      2958
+       macro avg       0.75      0.76      0.75      2958
+    weighted avg       0.75      0.76      0.75      2958
+
+
+--- mT5 ---
+                  precision    recall  f1-score   support
+
+    Non_Violence       0.81      0.43      0.56       986
+Passive_Violence       0.41      0.67      0.51       986
+        Violence       0.42      0.34      0.38       986
+
+        accuracy                           0.48      2958
+       macro avg       0.55      0.48      0.48      2958
+    weighted avg       0.55      0.48      0.48      2958
+
+
+--- Rule-Based Transformer ---
+                  precision    recall  f1-score   support
+
+    Non_Violence       0.47      0.55      0.51       986
+Passive_Violence       0.41      0.44      0.42       986
+        Violence       0.53      0.41      0.47       986
+
+        accuracy                           0.47      2958
+       macro avg       0.47      0.47      0.47      2958
+    weighted avg       0.47      0.47      0.47      2958
+
+
+============================================================
+WEIGHTED ENSEMBLE
+============================================================
+                  precision    recall  f1-score   support
+
+    Non_Violence       0.87      0.92      0.90       986
+Passive_Violence       0.77      0.68      0.72       986
+        Violence       0.79      0.84      0.81       986
+
+        accuracy                           0.81      2958
+       macro avg       0.81      0.81      0.81      2958
+    weighted avg       0.81      0.81      0.81      2958
+
+
+============================================================
+CONFIDENCE ROUTING (4 COMBINATIONS)
+============================================================
+
+--- BanglaBERT + XLM-RoBERTa + mT5 ---
+                  precision    recall  f1-score   support
+
+    Non_Violence       0.87      0.93      0.90       986
+Passive_Violence       0.77      0.69      0.73       986
+        Violence       0.80      0.83      0.81       986
+
+        accuracy                           0.82      2958
+       macro avg       0.81      0.82      0.81      2958
+    weighted avg       0.81      0.82      0.81      2958
+
+
+--- BanglaBERT + XLM-RoBERTa + Rule-Based ---
+                  precision    recall  f1-score   support
+
+    Non_Violence       0.87      0.93      0.90       986
+Passive_Violence       0.77      0.69      0.72       986
+        Violence       0.79      0.83      0.81       986
+
+        accuracy                           0.81      2958
+       macro avg       0.81      0.81      0.81      2958
+    weighted avg       0.81      0.81      0.81      2958
+
+
+--- BanglaBERT + mT5 + Rule-Based ---
+                  precision    recall  f1-score   support
+
+    Non_Violence       0.88      0.92      0.90       986
+Passive_Violence       0.76      0.70      0.73       986
+        Violence       0.79      0.82      0.80       986
+
+        accuracy                           0.81      2958
+       macro avg       0.81      0.81      0.81      2958
+    weighted avg       0.81      0.81      0.81      2958
+
+
+--- XLM-RoBERTa + mT5 + Rule-Based ---
+                  precision    recall  f1-score   support
+
+    Non_Violence       0.81      0.87      0.84       986
+Passive_Violence       0.66      0.63      0.65       986
+        Violence       0.77      0.75      0.76       986
+
+        accuracy                           0.75      2958
+       macro avg       0.75      0.75      0.75      2958
+    weighted avg       0.75      0.75      0.75      2958
+
+
+============================================================
+STACKING META-LEARNER
+============================================================
+                  precision    recall  f1-score   support
+
+    Non_Violence       0.91      0.91      0.91       986
+Passive_Violence       0.74      0.76      0.75       986
+        Violence       0.82      0.80      0.81       986
+
+        accuracy                           0.82      2958
+       macro avg       0.82      0.82      0.82      2958
+    weighted avg       0.82      0.82      0.82      2958
+
